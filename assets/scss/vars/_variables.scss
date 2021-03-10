@@ -1,0 +1,22 @@
+// Dir
+$base-dir: '';
+
+// Size
+$pc-width: 1280px;
+$pc-max-width: 1600px;
+// $tablet-width: 800px;
+$sp-width: 375px;
+$sp-max-width: 640px;
+
+$breakpoint: 960px;
+
+// Font
+$font-size: 16px;
+$font-family: YuGothic, 'Yu Gothic Medium', 'Yu Gothic', Verdana, Meiryo,
+  ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, sans-serif;
+
+// color
+$color-black: #323232;
+
+// zindex
+$z-index: modal, loading;

@@ -1,0 +1,30 @@
+@function image-url($path) {
+  @return url('~@img/#{$path}');
+}
+
+@function ps($value) {
+  @return $value / $pc-width + rem;
+}
+
+@function ts($value) {
+  @return $value / $tablet-width + rem;
+}
+
+@function ss($value) {
+  @return $value / $sp-width + rem;
+}
+
+@function calc-size($value) {
+  @return calc(#{$value}/ #{$sp-width} * 1rem);
+}
+
+@function min($values...) {
+  @return unquote('min(#{$values})');
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
