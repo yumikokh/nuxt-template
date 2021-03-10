@@ -1,5 +1,6 @@
 <template lang="pug">
   .top
+    h1 Hello, World.
 </template>
 
 <script lang="ts">
